@@ -10,35 +10,28 @@ from dotenv import load_dotenv
 
 load_dotenv()
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
-ROLE_MSG_ID = os.getenv(
-    "ROLE_MSG_ID"
-)  # ID of the message that can be reacted to to add/remove a role.
-RED_ROLE_ID = os.getenv("RED_ROLE_ID")
-BLUE_ROLE_ID = os.getenv("BLUE_ROLE_ID")
-GREEN_ROLE_ID = os.getenv("GREEN_ROLE_ID")
-ORANGE_ROLE_ID = os.getenv("ORANGE_ROLE_ID")
-PURPLE_ROLE_ID = os.getenv("PURPLE_ROLE_ID")
-YELLOW_ROLE_ID = os.getenv("YELLOW_ROLE_ID")
+
+ROLE_MSG_ID = 1283896815074152528
 
 EMOJI_TO_ROLE = {
     discord.PartialEmoji(
         name="🔴"
-    ): RED_ROLE_ID,  # ID of the role associated with unicode emoji '🔴'.
+    ): 1283840971519299657,  # ID of the role associated with unicode emoji '🔴'.
     discord.PartialEmoji(
         name="🔵"
-    ): BLUE_ROLE_ID,  # ID of the role associated with unicode emoji '🔵'.
+    ): 1283844488858439804,  # ID of the role associated with unicode emoji '🔵'.
     discord.PartialEmoji(
         name="🟢"
-    ): GREEN_ROLE_ID,  # ID of the role associated with unicode emoji '🟢'.
+    ): 1283844549353013279,  # ID of the role associated with unicode emoji '🟢'.
     discord.PartialEmoji(
         name="🟠"
-    ): ORANGE_ROLE_ID,  # ID of the role associated with unicode emoji '🟠'.
+    ): 1283844397062164540,  # ID of the role associated with unicode emoji '🟠'.
     discord.PartialEmoji(
         name="🟣"
-    ): PURPLE_ROLE_ID,  # ID of the role associated with unicode emoji '🟣'.
+    ): 1283844512208257074,  # ID of the role associated with unicode emoji '🟣'.
     discord.PartialEmoji(
         name="🟡"
-    ): YELLOW_ROLE_ID,  # ID of the role associated with unicode emoji '🟡'.
+    ): 1283841061705355387,  # ID of the role associated with unicode emoji '🟡'.
 }
 
 INTENTS = discord.Intents.default()
