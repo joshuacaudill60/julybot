@@ -69,6 +69,14 @@ async def play_next(ctx):
 
 
 @bot.command()
+async def skip(ctx):
+    """
+    Skips the current song
+    """
+    VOICE_CLIENTS[ctx.guild.id].stop()  # Stop playing music
+    play_next(ctx) # Play the next song in queue
+
+@bot.command()
 async def play(ctx, *, link):
     """
     Plays the song
